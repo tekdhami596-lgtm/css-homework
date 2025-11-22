@@ -1,251 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        body {
-            background-color: whitesmoke;
-        }
+      body {
+        background-color: whitesmoke;
+      }
 
-        form input{
-            padding: 1rem 1rem;
-            border-radius: 8px;
-            width: 40%;
-        }
+      form{
+          position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form input {
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        width: 40%;
+      
+     
+      }
+     
+      form svg {
+        position: absolute;
+        display: flex;
+       
+        
+      }
+     
 
+      .blog {
+        background-color: white;
+        border: 1px solid #e5e7eb;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
 
-        .blog {
-            background-color: white;
-            border: 1px solid #e5e7eb;
-            padding: 1rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
+      .blogs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+      }
 
-        .tags ul {
-            padding-left: 0;
-            list-style: none;
-        }
+      .blog img {
+        display: block;
+        margin: auto;
+      }
 
-        .tags li {
-            background-color: rgb(201, 201, 201);
-            padding-left: 8px;
-            padding-right: 8px;
-            padding-top: 4px;
-            padding-bottom: 4px;
-            border-radius: 9px;
-        }
+      .blog button {
+        display: block;
+        margin: auto;
+      }
 
-        .blog .meta {
-            font-size: 14px;
-            color: rgb(104, 104, 104);
-            margin-top: 12px;
-        }
+      .blog button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .tags ul {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+      }
+
+      .tags li {
+        background-color: rgb(201, 201, 201);
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-radius: 9px;
+      }
+
+      .blog .meta {
+        font-size: 14px;
+        color: rgb(104, 104, 104);
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <form>
-        <input placeholder="Search.."/>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+      <input placeholder="Search.." />
+      
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg>
+   
     </form>
 
     <h1>blogs</h1>
     <div class="blogs">
-        <div class="blog">
-            <img src="https://placehold.co/200x200" alt="JavaScript programming languages ">
-            <h2>Learning Css</h2>
-            <div class="tags">
-                <ul>
-                    <li>#html</li>
-                    <li>#css</li>
-                    <li>#js</li>
-                </ul>
-            </div>
-            <p>Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim q unde aperiam enim quidem facere eligendi odio debitis
-                molestias cupiditate nostrum!</p>
-            <button>View More
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                </svg>
-            </button>
-            <div class="meta">
-                <span>2025-01-01</span>
-                <span>-John Doe</span>
-            </div>
+      <div class="blog">
+        <img
+          src="https://placehold.co/200x200"
+          alt="JavaScript programming languages "
+        />
+        <h2>Learning Css</h2>
+        <div class="tags">
+          <ul>
+            <li>#html</li>
+            <li>#css</li>
+            <li>#js</li>
+          </ul>
         </div>
-        <div class="blog">
-            <img src="https://placehold.co/200x200" alt="JavaScript programming languages ">
-            <h2>Learning Css</h2>
-            <div class="tags">
-                <ul>
-                    <li>#html</li>
-                    <li>#css</li>
-                    <li>#js</li>
-                </ul>
-            </div>
-            <p>Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim q unde aperiam enim quidem facere eligendi odio debitis
-                molestias cupiditate nostrum!</p>
-            <button>View More
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                </svg>
-            </button>
-            <div class="meta">
-                <span>2025-01-01</span>
-                <span>-John Doe</span>
-            </div>
+        <p>
+          Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim
+          q unde aperiam enim quidem facere eligendi odio debitis molestias
+          cupiditate nostrum!
+        </p>
+        <button>
+          View More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-eye"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+            <path
+              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+            />
+          </svg>
+        </button>
+        <div class="meta">
+          <span>2025-01-01</span>
+          <span>-John Doe</span>
         </div>
-        <div class="blog">
-            <img src="https://placehold.co/200x200" alt="JavaScript programming languages ">
-            <h2>Learning Css</h2>
-            <div class="tags">
-                <ul>
-                    <li>#html</li>
-                    <li>#css</li>
-                    <li>#js</li>
-                </ul>
-            </div>
-            <p>Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim q unde aperiam enim quidem facere eligendi odio debitis
-                molestias cupiditate nostrum!</p>
-            <button>View More
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                </svg>
-            </button>
-            <div class="meta">
-                <span>2025-01-01</span>
-                <span>-John Doe</span>
-            </div>
+      </div>
+      <div class="blog">
+        <img
+          src="https://placehold.co/200x200"
+          alt="JavaScript programming languages "
+        />
+        <h2>Learning Css</h2>
+        <div class="tags">
+          <ul>
+            <li>#html</li>
+            <li>#css</li>
+            <li>#js</li>
+          </ul>
         </div>
-        <div class="blog">
-            <img src="https://placehold.co/200x200" alt="JavaScript programming languages ">
-            <h2>Learning Css</h2>
-            <div class="tags">
-                <ul>
-                    <li>#html</li>
-                    <li>#css</li>
-                    <li>#js</li>
-                </ul>
-            </div>
-            <p>Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim q unde aperiam enim quidem facere eligendi odio debitis
-                molestias cupiditate nostrum!</p>
-            <button>View More
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                </svg>
-            </button>
-            <div class="meta">
-                <span>2025-01-01</span>
-                <span>-John Doe</span>
-            </div>
+        <p>
+          Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim
+          q unde aperiam enim quidem facere eligendi odio debitis molestias
+          cupiditate nostrum!
+        </p>
+        <button>
+          View More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-eye"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+            <path
+              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+            />
+          </svg>
+        </button>
+        <div class="meta">
+          <span>2025-01-01</span>
+          <span>-John Doe</span>
         </div>
-        <div class="blog">
-            <img src="https://placehold.co/200x200" alt="JavaScript programming languages ">
-            <h2>Learning Css</h2>
-            <div class="tags">
-                <ul>
-                    <li>#html</li>
-                    <li>#css</li>
-                    <li>#js</li>
-                </ul>
-            </div>
-            <p>Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim q unde aperiam enim quidem facere eligendi odio debitis
-                molestias cupiditate nostrum!</p>
-            <button>View More
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                </svg>
-            </button>
-            <div class="meta">
-                <span>2025-01-01</span>
-                <span>-John Doe</span>
-            </div>
+      </div>
+      <div class="blog">
+        <img
+          src="https://placehold.co/200x200"
+          alt="JavaScript programming languages "
+        />
+        <h2>Learning Css</h2>
+        <div class="tags">
+          <ul>
+            <li>#html</li>
+            <li>#css</li>
+            <li>#js</li>
+          </ul>
         </div>
+        <p>
+          Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim
+          q unde aperiam enim quidem facere eligendi odio debitis molestias
+          cupiditate nostrum!
+        </p>
+        <button>
+          View More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-eye"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+            <path
+              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+            />
+          </svg>
+        </button>
+        <div class="meta">
+          <span>2025-01-01</span>
+          <span>-John Doe</span>
+        </div>
+      </div>
+      <div class="blog">
+        <img
+          src="https://placehold.co/200x200"
+          alt="JavaScript programming languages "
+        />
+        <h2>Learning Css</h2>
+        <div class="tags">
+          <ul>
+            <li>#html</li>
+            <li>#css</li>
+            <li>#js</li>
+          </ul>
+        </div>
+        <p>
+          Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim
+          q unde aperiam enim quidem facere eligendi odio debitis molestias
+          cupiditate nostrum!
+        </p>
+        <button>
+          View More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-eye"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+            <path
+              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+            />
+          </svg>
+        </button>
+        <div class="meta">
+          <span>2025-01-01</span>
+          <span>-John Doe</span>
+        </div>
+      </div>
+      <div class="blog">
+        <img
+          src="https://placehold.co/200x200"
+          alt="JavaScript programming languages "
+        />
+        <h2>Learning Css</h2>
+        <div class="tags">
+          <ul>
+            <li>#html</li>
+            <li>#css</li>
+            <li>#js</li>
+          </ul>
+        </div>
+        <p>
+          Lorem ipsum dolor s natibus esse unde aperiam enim q unde aperiam enim
+          q unde aperiam enim quidem facere eligendi odio debitis molestias
+          cupiditate nostrum!
+        </p>
+        <button>
+          View More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-eye"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+            <path
+              d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+            />
+          </svg>
+        </button>
+        <div class="meta">
+          <span>2025-01-01</span>
+          <span>-John Doe</span>
+        </div>
+      </div>
     </div>
 
     <!-- Tooltip -->
-    <div id="tour-tooltip" style="display:none;">
-        <div id="tour-message">Message</div>
-        <div style="margin-top:5px;">
-            <button id="next-btn" onclick="nextStep()">Next</button>
-            <button onclick="endTour()">✖ Close</button>
-        </div>
+    <div id="tour-tooltip" style="display: none">
+      <div id="tour-message">Message</div>
+      <div style="margin-top: 5px">
+        <button id="next-btn" onclick="nextStep()">Next</button>
+        <button onclick="endTour()">✖ Close</button>
+      </div>
     </div>
 
-    <button type="button" id="start-btn" onclick="startTour()">Start Tour</button>
+    <button type="button" id="start-btn" onclick="startTour()">
+      Start Tour
+    </button>
     <script>
-        const steps = [
-            {
-                element: `.blog`,
-                message: `a single row should contain 4 blogs and remaining blogs should start from another row. 
+      const steps = [
+        {
+          element: `.blog`,
+          message: `a single row should contain 4 blogs and remaining blogs should start from another row. 
                 
                 and there should be gaps between the blogs.
-                `
-            },
-            {
-                element: `.blog .tags ul`,
-                message: `these tags should be side by side, not vertically 
-                `
-            },
-            {
-                element: `.blog .meta`,
-                message: `the date should be at the left corner, while the auther's name should be in the right corner
-                `
-            },
-            {
-                element: `.blog img`,
-                message: `image should be at the center of the card horizontally
-                `
-            },
-            {
-                element: `.blog button`,
-                message: `this button should be at the center horizontally.
-                `
-            },
-            {
-                element: `.blog button`,
-                message: `the text and icon should be at the center of the button vertically
-                `
-            },
-            {
-                element: `form svg`,
-                message: `this search icon needs be exact center to the center of input tag vertically.
-                `
-            },
-
-
-        ]
-        const style = document.createElement('style');
-        style.textContent = `
+                `,
+        },
+        {
+          element: `.blog .tags ul`,
+          message: `these tags should be side by side, not vertically 
+                `,
+        },
+        {
+          element: `.blog .meta`,
+          message: `the date should be at the left corner, while the auther's name should be in the right corner
+                `,
+        },
+        {
+          element: `.blog img`,
+          message: `image should be at the center of the card horizontally
+                `,
+        },
+        {
+          element: `.blog button`,
+          message: `this button should be at the center horizontally.
+                `,
+        },
+        {
+          element: `.blog button`,
+          message: `the text and icon should be at the center of the button vertically
+                `,
+        },
+        {
+          element: `form svg`,
+          message: `this search icon needs be exact center to the center of input tag vertically.
+                `,
+        },
+      ];
+      const style = document.createElement("style");
+      style.textContent = `
             /* Styles for guided tour tooltip */
             .highlight {
                 outline: 3px solid orange;
@@ -297,68 +442,66 @@
 
             /* Add your custom styles here */
         `;
-        document.head.appendChild(style);
+      document.head.appendChild(style);
 
+      let current = 0;
+      const tooltip = document.getElementById("tour-tooltip");
+      const startBtn = document.getElementById("start-btn");
 
+      // Highlight start button initially
+      startBtn.classList.add("highlight");
 
-        let current = 0;
-        const tooltip = document.getElementById("tour-tooltip");
-        const startBtn = document.getElementById("start-btn");
+      function showStep(index) {
+        clearHighlights();
+        const step = steps[index];
+        const element = document.querySelector(step.element);
 
-        // Highlight start button initially
-        startBtn.classList.add("highlight");
+        if (!element) return;
 
-        function showStep(index) {
-            clearHighlights();
-            const step = steps[index];
-            const element = document.querySelector(step.element);
+        element.classList.add("highlight");
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
 
-            if (!element) return;
+        // Show tooltip
+        tooltip.style.display = "block";
+        document.getElementById("tour-message").innerText = step.message;
 
-            element.classList.add("highlight");
-            element.scrollIntoView({ behavior: "smooth", block: "center" });
+        // Position tooltip below the element
+        const rect = element.getBoundingClientRect();
+        tooltip.style.top = `${rect.bottom + window.scrollY + 10}px`;
+        tooltip.style.left = `${rect.left + window.scrollX}px`;
 
-            // Show tooltip
-            tooltip.style.display = "block";
-            document.getElementById("tour-message").innerText = step.message;
+        // Change Next button text on last step
+        document.getElementById("next-btn").innerText =
+          index === steps.length - 1 ? "Finish" : "Next";
+      }
 
-            // Position tooltip below the element
-            const rect = element.getBoundingClientRect();
-            tooltip.style.top = `${rect.bottom + window.scrollY + 10}px`;
-            tooltip.style.left = `${rect.left + window.scrollX}px`;
+      function startTour() {
+        current = 0;
+        startBtn.style.display = "none"; // hide start button after starting
+        showStep(current);
+      }
 
-            // Change Next button text on last step
-            document.getElementById("next-btn").innerText = index === steps.length - 1 ? "Finish" : "Next";
+      function nextStep() {
+        current++;
+        if (current >= steps.length) {
+          endTour();
+          return;
         }
+        showStep(current);
+      }
 
-        function startTour() {
-            current = 0;
-            startBtn.style.display = "none"; // hide start button after starting
-            showStep(current);
-        }
+      function endTour() {
+        clearHighlights();
+        tooltip.style.display = "none";
+        startBtn.style.display = "block"; // show start button again
+        startBtn.classList.add("highlight"); // highlight start button again
+      }
 
-        function nextStep() {
-            current++;
-            if (current >= steps.length) {
-                endTour();
-                return;
-            }
-            showStep(current);
-        }
-
-        function endTour() {
-            clearHighlights();
-            tooltip.style.display = "none";
-            startBtn.style.display = "block"; // show start button again
-            startBtn.classList.add("highlight"); // highlight start button again
-        }
-
-        function clearHighlights() {
-            document.querySelectorAll(".highlight").forEach(el => el.classList.remove("highlight"));
-        }
+      function clearHighlights() {
+        document
+          .querySelectorAll(".highlight")
+          .forEach((el) => el.classList.remove("highlight"));
+      }
     </script>
-
-
-</body>
-
+  </body>
 </html>
