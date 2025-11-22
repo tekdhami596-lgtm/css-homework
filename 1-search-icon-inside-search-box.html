@@ -16,32 +16,55 @@
             width: 400px;
         }
 
+         .input-form{
+            position: relative;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input-form .icon{
+            position: absolute;   
+        }
+
         .blog {
             border: 1px solid gray;
             padding: 1rem;
             width: 300px;
             margin-bottom: 1rem;
         }
+
+        .blogs{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding-left: 50px;
+        }
+       
+
+
     </style>
 
 </head>
 
 <body>
 
-    <form>
-        <input placeholder="search.." />
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+    <form class="input-form">
+        <input placeholder="search.."/>
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="icon icon-tabler icons-tabler-outline icon-tabler-search">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-            <path d="M21 21l-6 -6" />
+            <path d="M21 21l-6 -6" class="icon" />
         </svg>
+      
     </form>
 
     <br />
     <br />
     <h1>My Blogs</h1>
+   
     <div class="blogs">
         <div class="blog">
             <img src="https://placehold.co/200x200" alt="JavaScript programming languages ">
