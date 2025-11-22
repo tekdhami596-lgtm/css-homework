@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position homework</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin-top: 50px;
+        height: 3000px;
+      }
+
+  
+      .heading {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        height: 35px;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+      }
+
+      
+
+      .div1 {
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 30px;
+        width: 400px;
+        position: relative;
+        left: 50%;
+        right: 50%;
+      }
+
+      .para-heading {
+        margin-bottom: 30px;
+      }
+
+      .paragraph {
+        text-align: justify;
+      }
+
+      .X {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+      }
+
+      .sidebar {
+        background-color: green;
+        color: white;
+        position: fixed;
+        left: 0;
+        bottom: 100px;
+        top: 50px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button {
+        height: 25px;
+        width: 25px;
+        border: 1px solid;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .footer{
+        background-color: cyan;
+        color: rgba(17, 2, 2, 0.861);
+        position: fixed;
+        right: 20px;
+        bottom: 100px;
+        width: 80px;
+        height: 80px;
+        border: 2px solid;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h2>headings</h2>
+    </div>
+
+    
+   <div class="div1">
+      <h1 class="para-heading">My CSS</h1>
+      <div class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate
+        doloribus in reiciendis optio explicabo, vero eos pariatur ipsum ab,
+        beatae hic quae quasi quo error sit maiores quas aperiam. Fugit, iusto,
+        sunt sequi perspiciatis voluptatem id, dignissimos quia ducimus officiis
+        placeat quam! Debitis, illo repudiandae corporis nostrum, ab non quasi,
+        dolorum voluptate voluptates quas amet fugiat exercitationem eligendi
+        fugit. Distinctio laborum ut dignissimos natus aperiam porro iste
+        similique est sapiente officia. Molestiae alias, autem adipisci quae
+        dolorem saepe recusandae provident, assumenda praesentium deserunt
+        dignissimos in quo excepturi quas reiciendis. Laborum enim veritatis ea
+        eos repudiandae sed sit consequuntur praesentium laudantium sunt! Iure
+        sunt libero, labore sequi nulla vitae, obcaecati esse voluptatibus
+        fugiat, nesciunt ut repudiandae rerum soluta adipisci? Voluptate.
+        Suscipit officiis numquam quas dolorem porro, dolore deleniti. Sint
+        laborum sit praesentium quod incidunt, perspiciatis dolore. Nobis
+        numquam ipsam nostrum sed reprehenderit! Enim sequi temporibus eaque
+        exercitationem perspiciatis minima sed? Soluta numquam voluptatum vel
+        voluptates iusto, distinctio quas magni laborum iure! Non architecto
+        culpa, perferendis aspernatur voluptatem magnam voluptatibus fugit sed!
+        Voluptate, odit! Quisquam tempora dolorum sapiente molestias, maxime
+        architecto? Qui voluptatibus esse eos praesentium explicabo numquam
+        magni porro dolorum expedita, sit id dignissimos saepe adipisci
+        officiis. Hic, cumque accusamus quod dolores ad, maiores fugit
+        dignissimos quibusdam, voluptate est facilis.
+
+        <div class="X">X</div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div>
+        <p>fixed</p>
+        sidebar
+      </div>
+      <button class="button">X</button>
+    </div>
+
+    <div class="footer">
+      <div>
+        <p>message</p>
+      </div>
+    </div>
+  </body>
+</html>
